@@ -1,28 +1,20 @@
 Developing at the BBC
 =======
 
-Part 1: BDD and Software as a Service
+Walkthrough
 -------------------------------------------------
 
-**Task**: Create a tested endpoint to retrieve programe information about what programmes are available covering the Winter Olympics.
+In test/test_lib.py, there are failing tests for the function get_online_availability()implemented in src/lib.py.
+
+*Define and test the behaviour of this function.*
+*What are the edge cases?*
 
 
-Part 2: Acceptance Testing and Quality of Service
+Task
 -------------------------------------------------------------
-* Introduce Acceptance Testing
-* Introduce a common problem the BBC needs to solve - with emphasis on reputation and quality of service (Area for algorithmic complexity) e.g. availability of content
+In test/test_lib.py, there is a failing test for the function extract_episode_data()implemented in src/lib.py.
 
-**Task**: Using the exisitng acceptance test and criteria, implement an algorithm to achieve the desired outcome.
+Update the function to return the expected information which includes the yet to be implemented “online_availability_window”.
 
-Part 3: Distribution
------------------------------------------
-**Concepts**
-* HTTP - rfc2616 and standards
-* Caching
-* Distribution and CDN
+Extra: Are you missing any edge cases?
 
-**Task**: Implement a scaling policy to handle a call to action
-
-**Questions:**
-- What aspects of the response can be changed to increase the performance of the application?
-- What content is suitable to be delivered over a CDN?
