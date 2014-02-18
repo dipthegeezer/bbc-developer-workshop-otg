@@ -57,14 +57,15 @@ class TimeAvailableTest(TestCase):
         self.assertEquals(expected, time_since)
 
     def test_available_under_a_day(self):
-        
-        expected = "1:00:00"
-        self.assertEquals(expected, time_since)
+        self.fail()
+        #expected = "1:00:00"
+        #self.assertEquals(expected, time_since)
 
     def test_available_more_than_one_day(self):
+        self.fail()
  
     def test_available_more_than_two_days(self):
-   
+        self.fail()
 
 if __name__ == '__main__':
     unittest.main()
